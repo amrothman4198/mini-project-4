@@ -4,27 +4,27 @@ class Main {
   public static void main(String[] args) 
   {
     Scanner scan = new Scanner(System.in);
-
+//over here i added scanner 
     System.out.println("whats your name");
     String name = scan.next();
-
+//i asked the persons name using print
     System.out.println("are you at least 6,7 feet tall?");
     boolean height = scan.nextBoolean();
-
+//here  aksed if thier 6,7 because thats the average for the nba
     if (height) {
       System.out.println("do you have at least 5 years of experience");
       boolean experience = scan.nextBoolean();
       if (experience) {
-
+//i also used scanner for all of these and this one i just asked if he had any experience
         nbaTryout(name);
       }
     }
     System.out.println("how much money do you have to buy shoes?");
     double money = scan.nextDouble();
-
+//this one is me starting my second method and asking about shoes
     System.out.println("this is how much money you have left : "  + shoes(money));
   }
-
+//right here i asked them how much money they got to see what brands they ca afford
   static boolean nbaTryout(String name) 
   {
     Scanner scan = new Scanner(System.in);
@@ -44,7 +44,7 @@ class Main {
       return false;
     }
     return false;
-
+//if any of these return false they are not going to work correctly
   }
 
   static double shoes(double money) 
@@ -55,14 +55,14 @@ class Main {
     double brand = scan.nextDouble();
     if (brand == 50.0) {
       System.out.println("great you want to buy vans!");
-    }
+    }//i asksed over here what brands they are intreted to buy and i used scanner 
     if (brand == 200.0) {
       System.out.println("great you want to buy Jordans!");
-
+//if they put 200 then they ask for jordans 
     }
     if (brand == 100.0) {
       System.out.println("great you want to buy Nike!");
-    }
+    }//if they out 100 then they are askig for nike 
     return money - brand;
   }
 
